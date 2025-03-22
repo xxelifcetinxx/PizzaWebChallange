@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button, Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "reactstrap";
-import "./anasayfa.css"
+import "./Anasayfa.css"
 
 export default function Anasayfa() {
     return (

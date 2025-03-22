@@ -1,14 +1,14 @@
-import Anasayfa from "../components/anasayfa.jsx";
-import SiparisBasarili from "../components/siparisbasarili.jsx";
-import SiparisOlustur from "../components/siparisolustur.jsx";
+import Anasayfa from "./components/Anasayfa.jsx";
+import SiparisBasarili from "./components/SiparisBasarili.jsx";
+import SiparisOlustur from "./components/SiparisOlustur.jsx";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../components/siparisbasarili.css";
+import "./components/SiparisBasarili.css";
 // import './App.css' yazasark tüm css inline ortadan kalkar.
 
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Footter from "../components/footter";
+import Footter from "./components/Footter.jsx";
 
 function App() {
   const [verilenSiparis, setVerilenSiparis] = useState();
