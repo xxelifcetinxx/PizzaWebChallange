@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./components/SiparisBasarili.css";
 // import './App.css' yazasark tüm css inline ortadan kalkar.
 
+
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footter from "./components/Footter.jsx";
