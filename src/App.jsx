@@ -4,7 +4,7 @@ import SiparisOlustur from "./components/SiparisOlustur.jsx";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./components/SiparisBasarili.css";
-// import './App.css' yazasark tüm css inline ortadan kalkar.
+
 
 
 import React, { useState } from "react";
