@@ -6,10 +6,11 @@ export default function Anasayfa() {
     return (
         <>
             <div className="hero-image">
+            <img src="images/iteration-1-images/Home-banner.png" alt="banner" />
                 <div className="hero-text">
                     <section>
                         <Link to="/">
-                            <img src="Assets/Iteration-1-assets/logo.svg" alt="Logo" />
+                            <img src="images/iteration-1-images/logo.svg" alt="Logo" />
                         </Link>
                     </section>
                     <p className="firsat">fırsatı kaçırma</p>
