@@ -1,5 +1,5 @@
 import { TwitterLogo } from "@phosphor-icons/react";
-import "./Footter.css";
+import "./footter.css";
 
 export default function Footter() {
   return (
