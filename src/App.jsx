@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import workintech from '/workintech.svg'
-import './App.css'
+import Anasayfa from "../components/anasayfa.jsx";
+import SiparisBasarili from "../components/siparisbasarili.jsx";
+import SiparisOlustur from "../components/siparisolustur.jsx";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../components/siparisbasarili.css";
+// import './App.css' yazasark tüm css inline ortadan kalkar.
+
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footter from "../components/footter";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [verilenSiparis, setVerilenSiparis] = useState();
   return (
-    <>
+    <Router>
       <div>
-        <a href="https://github.com/Workintech/fsweb-s7-challenge-pizza" target="_blank">
-          <img src={workintech} className="logo" alt="Workintech logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <Switch>
+          <Route exact path="/">
+            <Anasayfa />
+          </Route>
+          <Route path="/siparis-olustur">
+            <SiparisOlustur setVerilenSiparis={setVerilenSiparis} />
+          </Route>
+          <Route path="/siparis-basarili">
+            <SiparisBasarili verilenSiparis={verilenSiparis} />
+          </Route>
+        </Switch>
       </div>
-      <h1>Workintech + 🍕</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          Absolute Acı Pizza sayısı {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Workintech or Pizza logos to learn more
-      </p>
-    </>
-  )
+      <Footter />
+    </Router>
+  );
 }
 
-export default App
+export default App;
