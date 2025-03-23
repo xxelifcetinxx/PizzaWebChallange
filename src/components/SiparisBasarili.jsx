@@ -100,8 +100,15 @@ export default function SiparisBasarili({ verilenSiparis }) {
         <img src="images/Iteration-1-images/logo.svg" alt="Logo" />{" "}
       </section>
       <section className="SiparisBasariliTxt">
-        <div><p>Sipariş Alınamadı . Lütfen tekrar deneyiniz ! </p></div>
-        <div><img src="images/iteration-2-images/pictures/food-2.png" alt="form-banner" style={{ width: "100%" }}/></div>
+      <div><img src="images/iteration-2-images/pictures/food-1.png" alt="food-1" style={{ width: "100%", marginBottom: '50px' }}/></div>
+   
+        <div>
+        <p>Sipariş Alınamadı.</p>
+        <p>Tekrar Deneyiniz! </p>
+        </div>
+        
+        
+        <div><img src="images/iteration-2-images/pictures/food-2.png" alt="food-2" style={{ width: "100%",marginBottom: '80px' }}/></div>
       </section>
       <ToastContainer />
     </div>
