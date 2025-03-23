@@ -231,7 +231,7 @@
 }
 
 .hero-image {
-  background-image: url("/Assets/Iteration-1-assets/home-banner.png");
+  background-image: url("/images/Iteration-1-images/home-banner.png");
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
@@ -298,5 +298,5 @@ a {
 }
 
 a:hover {
-  color: blue;
+  color: black;
 }

@@ -2,11 +2,12 @@
 
 .footer {
     background: #1A1A1A;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 155px;
+    gap: 100px;
     padding: 75px 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .yaziFooter {
@@ -14,6 +15,7 @@
     font-size: 50px;
     line-height: 50px;
     width: 15%;
+    color: white;
 }
 
 .solFooter {
@@ -28,6 +30,7 @@
 .solFooterYazi {
     font-size: 15px;
     padding-top: 10%;
+    color: white;
 }
 
 .ortaFooter {
@@ -36,10 +39,12 @@
 
 .ortaFooter div {
     padding-top: 7%;
+    color: white;
 }
 
 .ortaFooter h3 {
     padding-bottom: 5%;
+    color: white;
 }
 
 .sagFooter {
@@ -53,10 +58,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 15px;
+    color: white;
 }
 
 .sagFooter h3 {
     padding-bottom: 5%;
+    color: white;
 }
 
 .sagFooter img {
