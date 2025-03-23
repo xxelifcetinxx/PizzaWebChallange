@@ -9,9 +9,9 @@ export default function SiparisBasarili({ verilenSiparis }) {
   useEffect(() => {
     if (!verilenSiparis) {
       // Eğer verilenSiparis boşsa hata toast mesajı göster ve hemen yönlendir
-      toast.error("Hata: Sipariş bulunamadı, anasayfaya yönlendiriliyorsunuz", {
+      toast.error("Hata!! Sipariş bulunamadı, anasayfaya yönlendiriliyorsunuz", {
         position: "top-right",
-        autoClose: 15000, // 10 saniye sonra otomatik kapanır
+        autoClose: 15000, // 5 saniye sonra otomatik kapanır
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
@@ -22,14 +22,14 @@ export default function SiparisBasarili({ verilenSiparis }) {
 
       const myTimeout = setTimeout(() => {
         history.push("/"); // Hedef sayfa: Anasayfa
-      }, 15000); // 10 saniye sonra yönlendirme
+      }, 15000); // 5 saniye sonra yönlendirme
 
       return () => clearTimeout(myTimeout); // Cleanup function
     } else {
-      // Eğer sipariş varsa, başarı mesajı göster ve 10 saniye sonra yönlendir
-      toast.success("Anasayfaya yönlendiriliyorsunuz", {
+      // Eğer sipariş varsa başarı mesajı göster ve 5 saniye sonra yönlendir
+      toast.success("Siparişiniz başarıyla alınmıştır!! Anasayfaya yönlendiriliyorsunuz. Teşekkür ederiz. ", {
         position: "top-right",
-        autoClose: 10000, // 10 saniye sonra otomatik kapanır
+        autoClose: 15000, // 5 saniye sonra otomatik kapanır
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: false,
@@ -40,7 +40,7 @@ export default function SiparisBasarili({ verilenSiparis }) {
 
       const myTimeout = setTimeout(() => {
         history.push("/"); // Hedef sayfa: Anasayfa
-      }, 10000); // 10 saniye sonra yönlendirme
+      }, 15000); // 5 saniye sonra yönlendirme
 
       return () => clearTimeout(myTimeout); // Cleanup function
     }
@@ -49,11 +49,11 @@ export default function SiparisBasarili({ verilenSiparis }) {
   return verilenSiparis ? (
     <div className="siparisBasarili">
       <section className="siparisBasariliHeader">
-        <img src="Assets/Iteration-1-assets/logo.svg" alt="Logo" />
+      <img src="images/iteration-1-images/logo.svg" alt="Logo" />
       </section>
       <section className="SiparisBasariliTxt">
         <p>
-          <p className="lezzet">lezzetin yolda</p> SİPARİŞ ALINDI!
+          <p className="lezzet">lezzetin yolda</p> SIPARIS ALINDI!
         </p>
       </section>
       <section className="cizgi"></section>
@@ -97,11 +97,11 @@ export default function SiparisBasarili({ verilenSiparis }) {
   ) : (
     <div className="siparisBasarili">
       <section className="siparisBasariliHeader">
-        <img src="Assets/Iteration-1-assets/logo.svg" alt="Logo" />{" "}
+        <img src="images/Iteration-1-images/logo.svg" alt="Logo" />{" "}
       </section>
       <section className="SiparisBasariliTxt">
         <img
-          src="https://cdn.r10.net/editor/5718/3642958397.png"
+          src="404.png"
           alt="Logo"
           style={{ width: "100%" }}
         />
