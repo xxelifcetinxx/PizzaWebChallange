@@ -250,15 +250,15 @@
   transform: translate(-50%, -50%);
 }
 
-
 .anasayfaTxt {
-  font-family: Roboto Condensed;
+  font-family: Barlow;
   font-size: 86px;
   font-weight: 300;
   line-height: 92px;
   letter-spacing: 1.5px;
   color: #ffffff;
 }
+
 
 .anasayfaBtn {
   height: 50px;

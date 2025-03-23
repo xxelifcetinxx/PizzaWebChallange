@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
 
-.footter {
+.footer {
     background: #1A1A1A;
     display: flex;
     flex-direction: row;
@@ -9,45 +9,45 @@
     padding: 75px 0px;
 }
 
-.yaziFootter {
+.yaziFooter {
     font-family: Londrina Solid;
     font-size: 50px;
     line-height: 50px;
     width: 15%;
 }
 
-.solFootter {
+.solFooter {
     color: white;
     width: 290px;
 }
 
-.solFootter img {
+.solFooter img {
     padding-right: 3%;
 }
 
-.solFootterYazi {
+.solFooterYazi {
     font-size: 15px;
     padding-top: 10%;
 }
 
-.ortaFootter {
+.ortaFooter {
     color: white;
 }
 
-.ortaFootter div {
+.ortaFooter div {
     padding-top: 7%;
 }
 
-.ortaFootter h3 {
+.ortaFooter h3 {
     padding-bottom: 5%;
 }
 
-.sagFootter {
+.sagFooter {
     color: white;
     width: 400px;
 }
 
-.sagFootter div {
+.sagFooter div {
     width: 85%;
     display: flex;
     flex-wrap: wrap;
@@ -55,11 +55,11 @@
     row-gap: 15px;
 }
 
-.sagFootter h3 {
+.sagFooter h3 {
     padding-bottom: 5%;
 }
 
-.sagFootter img {
+.sagFooter img {
     width: 100px;
     height: 100px;
 }

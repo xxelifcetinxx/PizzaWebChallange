@@ -1,15 +1,15 @@
 import Anasayfa from "./components/Anasayfa.jsx";
-import SiparisBasarili from "./components/SiparisBasarili.jsx";
+import Footer from "./components/AnasayfaFooter.jsx";
 import SiparisOlustur from "./components/SiparisOlustur.jsx";
+import SiparisBasarili from "./components/SiparisBasarili.jsx";
+
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./components/SiparisBasarili.css";
-
-
 
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Footter from "./components/Footter.jsx";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 function App() {
   const [verilenSiparis, setVerilenSiparis] = useState();
@@ -28,7 +28,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <Footter />
+      <Footer />
     </Router>
   );
 }

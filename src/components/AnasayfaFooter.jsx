@@ -1,26 +1,26 @@
 import { TwitterLogo } from "@phosphor-icons/react";
-import "./Footter.css";
+import "./AnasayfaFooter.css";
 
-export default function Footter() {
+export default function Footer() {
   return (
     <>
-      <div className="footter">
-        <div className="solFootter">
-          <div className="yaziFootter">Teknolojik Yemekler</div>
-          <div className="solFootterYazi" style={{ width: "55%" }}>
+      <div className="footer">
+        <div className="solFooter">
+          <div className="yaziFooter">Teknolojik Yemekler</div>
+          <div className="solFooterYazi" style={{ width: "55%" }}>
             <img src="https://s3-alpha-sig.figma.com/img/0908/44d1/bf8ba15bccac8d589cd96d428c644077?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=oLWTxBKpzn-tKU~-upT1ckWsl~8YJo~-I2ruMEPpjviA~IWnFHcJeJcPVX1-O5WWYY~GwNuy6tRCaJp8WOB39YkATYywR~G1fTlh52Vj1YN5wb4P4BywV7a8tFoFFmIay9tM45bASGC6OtQx4W8wELvPcc1gIhLhBEuW9Jo8OiUt~s3msOmvvg8pyDsC86-i32LrAP5gPXlIcbsh1VcDVecQ7GyiLx1N-BsKkz25rxG~0A6Ids-CjvmrfBIv1wbRerXokri8ujkEYcThXdHhEadp5wfIhKqBosPQIHbb8BjluQ8A6IdOczKErURZhA01RfiQ7OJWfNj19OzJNWpKsw__" />
             341 Londonderry Road, Istanbul Türkiye
           </div>
-          <div className="solFootterYazi">
+          <div className="solFooterYazi">
             <img src="https://s3-alpha-sig.figma.com/img/9fff/c412/dba32836ccb7135781a5ffed3a177067?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WUdda1G1fag1vE87nyOmd8Li4Eue4G0C-Y8lVT-CYMDa1sARLGMWo2WHIB2Juzn5XwGSsf8JHXTQjyBBsjkp49YCgO09sU2gYtqAyc91BPrIB9xAF4Q29gWubPc8NArd4Jn5adTw7yAUH7s01n7bBkRfAbLwU5A4f4xIUS1x52dZg3JrPk2jEHPXZ0K3pTq5YpmrBFfl6UUhiTS0UJM-2C1AQtbUAFOHIQZYGCNPgQFG8Edf1Vs66~ux~bOwjyjArWjBZ~GuSCZQhbvP5SqL0c-pZbFphO3Y0ykxtFiU1lkHAQ0tKxuvzJoJRFzOaGgA6oNKXXfSwHKEYaenc9dsdw__" />
             aciktim@teknolojikyemekler.com
           </div>
-          <div className="solFootterYazi">
+          <div className="solFooterYazi">
             <img src="https://s3-alpha-sig.figma.com/img/5bcf/42e8/cf44624c37cb7290e61fd24e95f5f71c?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BpkSW5OTIOjZWE0L~ZRL7HUxGebrhrMT3gRUXqJUTuKwos-mWk94OXsVTSoKqWq9lPyKsAgjncXdDJ7xPVEky~f~SC4px-g4k37eQWfOGzlP7E5NYFMaFsDEohR4W6YpgaWGWwrIuRKRJfatDoKyGf2L8iMm82sgh9BwMPqEJvO6dqQ3IpPXEoSEqI93L2kv7MTgfCX3Hil52wKZoJRvURkvp4oHXUdcMlOlN8e8S3uc~r8qrQPrJkex2ExJTeJTHlPE6xCjK56b-gRaa2bmConnsEytTPYsfIitYEfEXBnrQTLEhDYPf-7KXtxWvvDpPXMVH9BzanrZ68N5wiml4w__" />
             +90 216 123 45 67
           </div>
         </div>
-        <div className="ortaFootter">
+        <div className="ortaFotter">
           <h3>Hot Menu</h3>
           <div>Terminal Pizza</div>
           <div>5 Kişilik Hackathlon Pizza</div>
@@ -29,7 +29,7 @@ export default function Footter() {
           <div>Testler Geçti Mutlu Burger</div>
           <div>Position Absolute Acı Burger</div>
         </div>
-        <div className="sagFootter">
+        <div className="sagFotter">
           <h3>Instagram</h3>
           <div>
             <img

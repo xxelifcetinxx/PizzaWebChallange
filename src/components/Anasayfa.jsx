@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { Button, Card, CardBody, CardImg, CardImgOverlay, CardText, CardTitle } from "reactstrap";
 import "./Anasayfa.css"
 
+
+
+
 export default function Anasayfa() {
     return (
         <>
@@ -17,9 +20,8 @@ export default function Anasayfa() {
                     </section>
                     <p className="firsat">fırsatı kaçırma</p>
                     <section className="anasayfaTxt">
-                        <p>
-                            KOD ACIKTIRIR Pizza, DOYURUR
-                        </p>
+                        <p>KOD ACIKTIRIR </p>
+                        <p>PIZZA, DOYURUR </p>
                     </section>
                     <section>
                         <Link to="/siparis-olustur">
@@ -198,8 +200,7 @@ export default function Anasayfa() {
                             }}
                         >
                             <img
-                                alt="Sample"
-                                src="https://s3-alpha-sig.figma.com/img/d864/d5f2/cfeae804c5416af75c83724fea1e8a2a?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hAzZ3NJmZ3ybWEKebQM6R6YW4mx36cvjrRzzjsAmsPA~ELhfDrdWCC~Od1YDhzRZGauTGIZcHleTVT3iCvACeb6ffdHhuG18pcgKd49XQSKVtbrf2curg~8mEJHHz0Ss7RZRNrm5h45vwfpxXc6MZ7eOjg1m3xv~4F5HiO8ve0zdcEGx42NVBacg9xix0xKxVQrbo55Lr6Ho2r1tXLkbHo3jUSBs4ZLBw2BrK2bm44W~xYyQtKEQbzdhOfr9o-iZE~py~AkV8~V3iXoQ0aFDp1zxv7nwfo2KR5TiLaYUclZtGD9ymupdFBgd~oLynLOYQLO2QLbUxhf8d1Pdz1TN7Q__"
+                                alt="food-1" src="./images/iteration-2-images/pictures/food-1.png"
                             />
                             <CardBody>
                                 <CardTitle className="pizzaHeader">
@@ -228,8 +229,7 @@ export default function Anasayfa() {
                             }}
                         >
                             <img
-                                alt="Sample"
-                                src="https://s3-alpha-sig.figma.com/img/b4ef/f9b1/a666a9eaf37b96abc3aa028f58013324?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jFaubq~Lg3WuyFXBU3-nI8ERUfIl-rO0zMhkU32BRTPYVB6D40q5btuE2i1YKYAIBDtzFjtR2cF4M9VC44bJAWmo6DJK5p8U3xgHiMNzdmE6bJHoiCoyFA60l7hYdJvOcT-q6WriqifpxhPq1LZPHs~ukI46VjmnqA3GP3Bo~bRirtuN7r541RQch84MjDEuBDSDLZWCpu7oijHICFwLE~1N5jOWOF5QMQxw3pCLaZZVh4rgvmrxpkAbQcM8BrJEsnqBvrzMaujTgdTndW4YiGwA~i~vLOnPefmo-tLTenSzZPeWn7XmHgLs-J-AuNI0COT6diHP04FshMMgy1VxeQ__"
+                                alt="food-2" src="./images/iteration-2-images/pictures/food-2.png"
                             />
                             <CardBody>
                                 <CardTitle className="pizzaHeader">
@@ -258,8 +258,7 @@ export default function Anasayfa() {
                             }}
                         >
                             <img
-                                alt="Sample"
-                                src="https://s3-alpha-sig.figma.com/img/458e/326c/cd5af55f8af508250a5509f485252911?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EC5JkEiBjoojca~BM~y1HOs80yNJsBMixj9Smi2-na5rvhwYcSujOM3Io8yw7yrpmUV4DPH~Lt2z6U6fSM7vbRtM958CBHhIar8STNEAfuV24NYKiSWbHi0sXVqpIxK5Eud7Kx9S6lZNTXuyLkCuGs2EczL-cCqik2YFgBp5nuI50jUL-o4homvhIG~8KE4j-IsgU4RhZ4bcipsFa78aysxns779CxLMlLnWr0YDzcQCFvr~jNN5BdzOlsTDAuq2~xIU20O~E0Eq8wZs3iA4LPsEXo32FPbMJqvuVJDMr9P0BfzXiBpnsbmdcWCPT629r4bugge3pUf6Cff21M3PSQ__"
+                                alt="food-3" src="./images/iteration-2-images/pictures/food-3.png"
                             />
                             <CardBody>
                                 <CardTitle className="pizzaHeader">
@@ -281,6 +280,8 @@ export default function Anasayfa() {
                     </div>
                 </div>
             </div >
+
+
         </>
     );
 }
