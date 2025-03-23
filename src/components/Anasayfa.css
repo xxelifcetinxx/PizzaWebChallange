@@ -16,6 +16,7 @@
   gap: 4%;
   height: 75px;
   font-family: Barlow;
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -77,7 +78,7 @@
   padding: 12px 20px;
 }
 
-.box1Body {
+.box1Body .box2Body{
   font-family: Barlow;
   font-size: 32px;
   font-weight: 600;
@@ -85,27 +86,6 @@
   padding-bottom: 2%;
 }
 
-.yeniDeneme {
-  width: 500px;
-  height: 226px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  border-radius: 8px;
-  background-image: url("https://s3-alpha-sig.figma.com/img/b205/d24a/40ed8009ff8742ced4cebd1f21b6c436?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=lc44bu0NSmi8ifUgCXvLrHI-RfZwpfeKkKUfJUX-z9kV-GADEqUQNorsxlDQeHShlNqmh4WZMiV51hWn3AZckDDwNVM3Z3~GbYFVnoXjmMj9z6zIU2toRTyzpEYXzp~oZ4AOBJR49MvdQ3-zDsXhGLWkNO2ILzI55A8K34nX8VFxXuw6NhL0PSYSbpIpF9vdtGsx8DaX2dkLMPJHUTI4-n2rZlv5~qHqPI~wyNuXrpBFY0Vy241YzGE1OYpGvWK4kaSe3vvq1s9ZRhPorGFeZu4TKcmxMIbeKwFOFZM5-fnxf8tQg12crxQWMpUzqfDLonJH6r2ALx-0DtIKDO7~YQ__");
-  display: flex;
-  align-items: center;
-  background-color: #ffeecc;
-}
-
-.box2Body {
-  font-family: Barlow;
-  font-size: 32px;
-  font-weight: 600;
-  width: 200%;
-  padding-bottom: 30%;
-}
 
 .bosluk {
   padding-left: 3%;
@@ -144,17 +124,29 @@
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
 .headerButton {
   background: white;
-  padding: 10px 10px;
+  padding: 20px 20px;
   border-radius: 50px;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Geçiş efekti (isteğe bağlı) */
 }
 
 .headerButton a {
   display: flex;
   align-items: center;
   column-gap: 5px;
+  color: inherit; /* Bağlantı metninin rengini üst öğeden alır */
+}
+
+.headerButton:hover {
+  background-color: #292929;
+  color: white;
+}
+
+.headerButton:hover a {
+  color: white; /* Bağlantı metninin rengini beyaz yapar */
 }
 
 .pizzas {

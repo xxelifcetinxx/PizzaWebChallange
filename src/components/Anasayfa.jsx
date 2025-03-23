@@ -5,6 +5,8 @@ import "./Anasayfa.css"
 export default function Anasayfa() {
     return (
         <>
+
+        
             <div className="hero-image">
             <img src="images/iteration-1-images/Home-banner.png" alt="banner" />
                 <div className="hero-text">
@@ -29,37 +31,46 @@ export default function Anasayfa() {
                 </div>
             </div>
             <div>
+
+            
+
                 <div className="gövdeNav">
                     <a href="#">
-                        <img src="https://s3-alpha-sig.figma.com/img/2a12/f370/cf32c9057ad4d91cff5bfb6cf82c7087?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R6m1L3SfIz8KvFZU2KN3Ge2p6mluz-h8qkQSG2XS03fiqQ95akFkjxoKsbB1SSxMJb3bc8NbiphJhFlurc8blc2ot5Ub9pxGz4gjmdNuIZw2oJaOCOaIKbmsyphmqpOHUziYWRY-qrxMgEK5ooGAaPRSHUvMMnMhe9Q0x~vSkzbhiG6oNhXz~h-GFSMoV1zioI~KVY3qIPoCMLs9SCooiplwTkaEZkfbrxEvzpzySF43NU7F3TVI3XoBF~kd6NBLlvcs9CUSlzqT2FRjmMPUFgoX0P-SckIdP3BkzI14B5ElAPuCmdGNvFbrMXWOurw3MpoeHH~p9fdzoWpyIl809Q__" alt="resim1" />
+                        <img src="./images/iteration-2-images/icons/1.svg" alt="1.svg" />
                         YENİ! Kore
                     </a>
                     <a href="#">
-                        <img src="https://s3-alpha-sig.figma.com/img/3db5/2209/4bb26a7c6402da2e5f2c39e566b59480?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DFgd2u4ftIVayDyVrFMSG4q-OmpcokV16GVhB5k83An14cTsoXKanh9qkUYVbu38Ff~yiMzCNU9J4YAbFxxgjcInX1dOu25fBuCmAnHp62BCTeByX08oPiQAgvbflDcV0F-T0XTha6JgjrdUsrc45Cz3xo1K6n1DUvr8Jh6xNMYlza3adwTapxSwSMne3Pznl17ZRHl5-08eNVOFBpa9dujekgJ7RSijXhM0t2rUWtkE0XdyLsxdNAoxMWwS1bstUVqyLWw4xk5RWDTL6mUAHTyLlCKW-ThhlL3r1vC~R5MSc2TcjlrUSDxrqbPayi3jwCpLEziHUCGqhTebec8-7g__" alt="resim2" />
+                    <img src="./images/iteration-2-images/icons/2.svg" alt="2.svg" />
                         Pizza
                     </a>
                     <a href="#">
-                        <img src="https://s3-alpha-sig.figma.com/img/150a/f637/0ef0632109b215d5033b6aaeb40d4e2b?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZTmBkHAZIVNdD8SqwTvIZPsSz9g93e~hXmOprx~QBYizBIxY0C9u5GYKtWcqw1kzZZGQ5Sz-BbXkKFUuNH0v3kCbO66YY3VCVInwab0KikEwmlQ8PKrnT~apEXPgwzMGe89y1-70D3~2565VSiQCP~yi-3j83W5GT2AXCTLnMtoirAT2NXzphb1UjxDnoyrhDhy5OnbgXLpcF9L-J5j3nWwPXnwrc4IF59iUWGrpdo2eka-fA8Ijh92zp4RXmEWaySoItbTH73Nn745r8yMkTk3a91VfMso5o46oIssDq2Mn4s8QUn~dtBfKxk5amwt2I6Sjm8u5L-LmG8uwjIxd3Q__" alt="resim3" />
+                        <img src="./images/iteration-2-images/icons/3.svg" alt="3.svg" />
                         Burger
                     </a>
                     <a href="#">
-                        <img src="https://s3-alpha-sig.figma.com/img/1309/5a0d/52da3b4e6fe7e8ad5ab9c0703474762e?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oc1ApFYyVFriqlEg-lX4onBo-WqlaxZuaRVIx~I8vWooQISHd0RiNVgaAOe8mXhDov17wSqTglzn7lih4jxbHfqkrpXPC3HUil3CYipAFsrbU4gBEul3WDmnsZgiZbWNFTHLJPb-1fiHK7feEx651vACaVpZ7OVZGY~Unmsl7fJT2kvabyc7Igp6xQVYhG4iHM~QU5uKCT3bU4Aw868HRIa6TFY0DdNdNUw2-ViTQBXrHAYG~DXeM8XVyKEx32NJkVGkSaHnSOSxuC55FcUGeYI9i12lN4Gr-sesF3PvgWliFL2drL84G2jIGyPZMuqF87zQr7us1Wte9RhROOEyRQ__" alt="resim4" />
+                        <img src="./images/iteration-2-images/icons/4.svg" alt="4.svg" />   
                         Kızartmalar
                     </a>
                     <a href="#">
-                        <img src="https://s3-alpha-sig.figma.com/img/a0bd/3d89/c8ba4e927016ed3c458e1e2b03a0fd47?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WKHg8ovbG39tnbk9lsGYAhwBcqDFhUuyVE1Hd2yqeQ0SVlhDTSTWhurQJ4lTli4Nb7ZrYGM801Vkb28hWOrIHbTNmcXQGSSzY4K3pZ7YIZKlhjLXxiQzXMDN2hcX2FgqZBfKnfMCuesWkzNHOfRJDG65CvScMbjTNaiaWoivWwXsV2gM-zlpOeI4oPf0rcHt3DQSped6mX2ubNXkF32jeCkKKyBr9ehV9jVD8FYir-9kcqpVm6FNzVdiWbBfBOkTZ2ms4GQ2jPQ92UF5wWfY~ZYqC9IkWnSzIsKH70b7NBoCtJc3Mrrd3rG2UEmAL94zw2w7DKyChrO7UU5Ita7fkg__" alt="resim5" />
+                    <img src="./images/iteration-2-images/icons/5.svg" alt="5.svg" />
                         Fast food
                     </a>
                     <a href="#">
-                        <img src="https://s3-alpha-sig.figma.com/img/d0a0/bb89/ccb1059768c63af268f17153b667d4b8?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HhZbvZGQsht5oXODRR102rCZ8RF6YksI0a9~bwgG8425C0tlZqGoJDLXI9aBLkaE3a0~xD60dXt-rG93WCi-WlJVZkbGZflaCeZTfdCz07LfWpmA2hVjHiAwPufPOfXEgLndm29hXeOGQc-UQPNAFuxahGOpgx9LADhl6EWSioacf~8bJDY9t8MnB4PsblvJHlOQVfTibs2VyYG9yKMaPy5zc~qmyew1S8EUQMHFBKTOmcbtd3EE~MxSX0SjMpnyNzYVqxeW6lard6LKwqxJMjN7xkuJOd7PyhEf6psLUeM7PqV03R8ovPMmL-h8v4tReI~8ucMVepZyKq2hKMTTdQ__" alt="resim6" />
+                        <img src="./images/iteration-2-images/icons/6.svg" alt="6.svg" />
                         Gazlı İçecek
                     </a>
                 </div>
+
+
+
+            
+
+
                 <div className="icerik">
                     <Card inverse className="box" style={{ background: "#CE2829" }}>
                         <CardImg
-                            alt="Card image cap"
-                            src="https://s3-alpha-sig.figma.com/img/c436/3ab0/a2144978475fda5e250917960da4ea56?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ObTrVwAspvJilZ9sR1dY4IqGUL5BJwAbLyIEEIwPAZDr5vEzhles8VGBxwtLdbkUzjBVoWbqqLyrMAGz47TdrUm5~YkPfDxrh5ZShjCa30OBivBqR53iLZAnn~VumX-ZTvrHqk1goiryKqxFpVcNUikt2EUXYVclJ20pxQXz~v7HPcqhswtYqOrCteVPSS0mJQ-lVj4eH20VSi8M~ykEDqCIbhlZVZcIO49RHHCa1ebdZ6TYheeudBc0dcD7Mqe~dC8UtQD7vTwkLQSIkiwsVRP9vL1zfAri2elywDn40RsDzDiEGYw1s0m3bD29v8xRj1znWg~319-bwNF3Li91NA__"
+                            alt="kart-1.png"
+                            src="./images/iteration-2-images/cta/kart-1.png"
                             style={{
                                 height: 465
                             }}
@@ -79,13 +90,14 @@ export default function Anasayfa() {
                             </CardText>
                         </CardImgOverlay>
                     </Card>
+
+
                     <div>
                         <Card inverse className="box" style={{ background: "#292929", marginBottom: "15px" }}>
                             <CardImg
-                                alt="Card image cap"
-                                src="https://s3-alpha-sig.figma.com/img/6166/ed58/d63154ac0f2a8d7ea2d719fc064bc3f6?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pJ~h5SLrio5hR68cDYpXS7XkWanWHUDxLl2roRZ3cxdaE3Blp02yqajLrIVs3uLvZhYgKePaeQnhhh1N4j8aWpAhHCE0GhEjSgq7ghW9gOTwnQBR4zpkwCVMxqNmZ9uB1ot0gZj8aIzvuIOciJWnAbtm~GABxHvDKGGRDVNVGVUoZsrMf4Vw2liFxJe83GF~WRa42WG5u0uWHg~UgC2UXcjzvPSnh1QIdHFmPzlQzLeaHYH8HgTae6dUvJGsG90owVWu~flifeEDSJyftSU0SbwKbyxkAWtxIrdoGmcRGNsV0AAbXDTZFFxmzyGsKvN4lqd0LwVlFoi8XP9OFQwWRg__"
-                                style={{
-                                    height: 225
+                                alt="kart-2.png"
+                                src="./images/iteration-2-images/cta/kart-2.png"
+                                style={{height: 225
                                 }}
                                 width="100%"
                             />
@@ -100,20 +112,32 @@ export default function Anasayfa() {
                                 </CardText>
                             </CardImgOverlay>
                         </Card>
-                        <div className="yeniDeneme">
-                            <div className="bosluk">
-                                <h3 className="box2Body" style={{ color: "#CE2829" }}>
-                                    Çoooook <span style={{ color: "black" }}>hızlı npm gibi kurye</span>
-                                </h3>
-                                <a className="boxButton" href="#">
-                                    SİPARİŞ VER
-                                </a>
-                            </div>
-                            <div>
-                                <img src="https://s3-alpha-sig.figma.com/img/3eca/c553/7e43419d60a8258a07300efc67447fa4?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gPcrgSGm5F8pqEfMa~RtxAB9VplSFGVbyh31SpgXLmxc0NbzEw-owp5z4rNYfKEMNpFKpcCDjmZxPJbQ3XhyFfgMiPopbDkf2nD6Oji5OH-6aeQL8KuMPEHUlRCSe1Bo4fNCtF6CG11rPjTF5DYo2O-pwActY7795VHi~OiArFY-Av~eLJrmIhpY4Z460JVyPtNAZtdteZPuukHBDQFJn~Z7q9kfIJ8rSDg~K6Du9fHzfl~tQOVfkVoWXgaArv170ZRUJiExgn1G~U9u0eMyKFGOy1QiEh5eT8qs1UUPZvX67B8E6lIC9B78Jka6u~ZuKdsHH7cYFeGGvk8tDwl1~Q__" style={{ width: "387.6px", height: "194px", paddingRight: "20%" }} />
-                            </div>
-                        </div>
+                        
+                        <Card inverse className="box" style={{ color: "#CE2829", overflow: "hidden" }}>
+                            <CardImg
+                                alt="kart-3.png"
+                                src="./images/iteration-2-images/cta/kart-3.png"
+                                style={{height: 225,
+                                }}
+                                width="100%"
+                            />
+                            <CardImgOverlay>
+                                <CardTitle className="box2Body"style={{ color: "#CE2829" }}>
+                                    <p> Çoooook <span style={{ color: "black" }}> hızlı </span></p>
+                                    <p><span style={{ color: "black" }}>npm gibi kurye </span></p>
+                                </CardTitle>
+                                <CardText className="box2Body">
+                                    <a className="boxButton" href="#">
+                                        SİPARİŞ VER
+                                    </a>
+                                </CardText>
+                            </CardImgOverlay>
+                        </Card>
+                        
                     </div>
+
+
+
                 </div>
                 <div className="paketHeader">
                     <div className="slogan1">
@@ -126,41 +150,44 @@ export default function Anasayfa() {
                 <div className="footterHeader">
                     <div className="headerButton">
                         <a href="#">
-                            <img src="https://s3-alpha-sig.figma.com/img/2a12/f370/cf32c9057ad4d91cff5bfb6cf82c7087?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R6m1L3SfIz8KvFZU2KN3Ge2p6mluz-h8qkQSG2XS03fiqQ95akFkjxoKsbB1SSxMJb3bc8NbiphJhFlurc8blc2ot5Ub9pxGz4gjmdNuIZw2oJaOCOaIKbmsyphmqpOHUziYWRY-qrxMgEK5ooGAaPRSHUvMMnMhe9Q0x~vSkzbhiG6oNhXz~h-GFSMoV1zioI~KVY3qIPoCMLs9SCooiplwTkaEZkfbrxEvzpzySF43NU7F3TVI3XoBF~kd6NBLlvcs9CUSlzqT2FRjmMPUFgoX0P-SckIdP3BkzI14B5ElAPuCmdGNvFbrMXWOurw3MpoeHH~p9fdzoWpyIl809Q__" alt="resim1" />
+                        <img src="./images/iteration-2-images/icons/1.svg" alt="1.svg" />
                             Ramen
                         </a>
                     </div>
-                    <div className="headerButton" style={{ background: "#292929" }}>
-                        <a href="#" style={{ color: "white" }}>
-                            <img src="https://s3-alpha-sig.figma.com/img/3db5/2209/4bb26a7c6402da2e5f2c39e566b59480?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=DFgd2u4ftIVayDyVrFMSG4q-OmpcokV16GVhB5k83An14cTsoXKanh9qkUYVbu38Ff~yiMzCNU9J4YAbFxxgjcInX1dOu25fBuCmAnHp62BCTeByX08oPiQAgvbflDcV0F-T0XTha6JgjrdUsrc45Cz3xo1K6n1DUvr8Jh6xNMYlza3adwTapxSwSMne3Pznl17ZRHl5-08eNVOFBpa9dujekgJ7RSijXhM0t2rUWtkE0XdyLsxdNAoxMWwS1bstUVqyLWw4xk5RWDTL6mUAHTyLlCKW-ThhlL3r1vC~R5MSc2TcjlrUSDxrqbPayi3jwCpLEziHUCGqhTebec8-7g__" alt="resim2" />
+                    <div className="headerButton" >
+                        <a href="#">
+                        <img src="./images/iteration-2-images/icons/2.svg" alt="2.svg" />
                             Pizza
                         </a>
                     </div>
                     <div className="headerButton">
                         <a href="#">
-                            <img src="https://s3-alpha-sig.figma.com/img/150a/f637/0ef0632109b215d5033b6aaeb40d4e2b?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZTmBkHAZIVNdD8SqwTvIZPsSz9g93e~hXmOprx~QBYizBIxY0C9u5GYKtWcqw1kzZZGQ5Sz-BbXkKFUuNH0v3kCbO66YY3VCVInwab0KikEwmlQ8PKrnT~apEXPgwzMGe89y1-70D3~2565VSiQCP~yi-3j83W5GT2AXCTLnMtoirAT2NXzphb1UjxDnoyrhDhy5OnbgXLpcF9L-J5j3nWwPXnwrc4IF59iUWGrpdo2eka-fA8Ijh92zp4RXmEWaySoItbTH73Nn745r8yMkTk3a91VfMso5o46oIssDq2Mn4s8QUn~dtBfKxk5amwt2I6Sjm8u5L-LmG8uwjIxd3Q__" alt="resim3" />
+                        <img src="./images/iteration-2-images/icons/3.svg" alt="3.svg" />
                             Burger
                         </a>
                     </div>
                     <div className="headerButton">
                         <a href="#">
-                            <img src="https://s3-alpha-sig.figma.com/img/1309/5a0d/52da3b4e6fe7e8ad5ab9c0703474762e?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oc1ApFYyVFriqlEg-lX4onBo-WqlaxZuaRVIx~I8vWooQISHd0RiNVgaAOe8mXhDov17wSqTglzn7lih4jxbHfqkrpXPC3HUil3CYipAFsrbU4gBEul3WDmnsZgiZbWNFTHLJPb-1fiHK7feEx651vACaVpZ7OVZGY~Unmsl7fJT2kvabyc7Igp6xQVYhG4iHM~QU5uKCT3bU4Aw868HRIa6TFY0DdNdNUw2-ViTQBXrHAYG~DXeM8XVyKEx32NJkVGkSaHnSOSxuC55FcUGeYI9i12lN4Gr-sesF3PvgWliFL2drL84G2jIGyPZMuqF87zQr7us1Wte9RhROOEyRQ__" alt="resim4" />
-                            Kızartmalar
+                        <img src="./images/iteration-2-images/icons/4.svg" alt="4.svg" />
+                            French Fries
                         </a>
                     </div>
                     <div className="headerButton">
                         <a href="#">
-                            <img src="https://s3-alpha-sig.figma.com/img/a0bd/3d89/c8ba4e927016ed3c458e1e2b03a0fd47?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WKHg8ovbG39tnbk9lsGYAhwBcqDFhUuyVE1Hd2yqeQ0SVlhDTSTWhurQJ4lTli4Nb7ZrYGM801Vkb28hWOrIHbTNmcXQGSSzY4K3pZ7YIZKlhjLXxiQzXMDN2hcX2FgqZBfKnfMCuesWkzNHOfRJDG65CvScMbjTNaiaWoivWwXsV2gM-zlpOeI4oPf0rcHt3DQSped6mX2ubNXkF32jeCkKKyBr9ehV9jVD8FYir-9kcqpVm6FNzVdiWbBfBOkTZ2ms4GQ2jPQ92UF5wWfY~ZYqC9IkWnSzIsKH70b7NBoCtJc3Mrrd3rG2UEmAL94zw2w7DKyChrO7UU5Ita7fkg__" alt="resim5" />
+                        <img src="./images/iteration-2-images/icons/5.svg" alt="5.svg" />
                             Fast food
                         </a>
                     </div>
                     <div className="headerButton">
                         <a href="#">
-                            <img src="https://s3-alpha-sig.figma.com/img/d0a0/bb89/ccb1059768c63af268f17153b667d4b8?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HhZbvZGQsht5oXODRR102rCZ8RF6YksI0a9~bwgG8425C0tlZqGoJDLXI9aBLkaE3a0~xD60dXt-rG93WCi-WlJVZkbGZflaCeZTfdCz07LfWpmA2hVjHiAwPufPOfXEgLndm29hXeOGQc-UQPNAFuxahGOpgx9LADhl6EWSioacf~8bJDY9t8MnB4PsblvJHlOQVfTibs2VyYG9yKMaPy5zc~qmyew1S8EUQMHFBKTOmcbtd3EE~MxSX0SjMpnyNzYVqxeW6lard6LKwqxJMjN7xkuJOd7PyhEf6psLUeM7PqV03R8ovPMmL-h8v4tReI~8ucMVepZyKq2hKMTTdQ__" alt="resim6" />
-                            Gazlı İçecek
+                        <img src="./images/iteration-2-images/icons/6.svg" alt="6.svg" />
+                            Soft drinks
                         </a>
                     </div>
                 </div>
+
+
+
                 <div className="pizzas">
                     <div>
                         <Card
