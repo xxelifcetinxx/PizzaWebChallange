@@ -26,7 +26,7 @@ export default function SiparisBasarili({ verilenSiparis }) {
 
       return () => clearTimeout(myTimeout); // Cleanup function
     } else {
-      // Eğer sipariş varsa başarı mesajı göster ve 5 saniye sonra yönlendir
+      // Eğer sipariş varsa, başarı mesajı göster ve 5 saniye sonra yönlendir
       toast.success("Siparişiniz başarıyla alınmıştır!! Anasayfaya yönlendiriliyorsunuz. Teşekkür ederiz. ", {
         position: "top-right",
         autoClose: 15000, // 5 saniye sonra otomatik kapanır
@@ -100,11 +100,8 @@ export default function SiparisBasarili({ verilenSiparis }) {
         <img src="images/Iteration-1-images/logo.svg" alt="Logo" />{" "}
       </section>
       <section className="SiparisBasariliTxt">
-        <img
-          src="404.png"
-          alt="Logo"
-          style={{ width: "100%" }}
-        />
+        <div><p>Sipariş Alınamadı . Lütfen tekrar deneyiniz ! </p></div>
+        <div><img src="images/iteration-2-images/pictures/food-2.png" alt="form-banner" style={{ width: "100%" }}/></div>
       </section>
       <ToastContainer />
     </div>

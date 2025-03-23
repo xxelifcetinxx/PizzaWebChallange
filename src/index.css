@@ -278,13 +278,13 @@
 .siparisBasariliHeader {
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding: 50px 50px;
 }
 
 .SiparisBasariliTxt {
   display: flex;
   justify-content: center;
-  font-family: Roboto Condensed;
+  font-family: Barlow;
   font-size: 56px;
   letter-spacing: 1.5px;
   text-align: center;
@@ -298,5 +298,5 @@ a {
 }
 
 a:hover {
-  color: black;
+  color: #CE2829;
 }
