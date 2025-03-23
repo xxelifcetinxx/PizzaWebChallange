@@ -8,8 +8,6 @@ import "./Anasayfa.css"
 export default function Anasayfa() {
     return (
         <>
-
-        
             <div className="hero-image">
             <img src="images/iteration-1-images/Home-banner.png" alt="banner" />
                 <div className="hero-text">
@@ -149,7 +147,7 @@ export default function Anasayfa() {
                         Acıktıran Kodlara Doyuran Lezzetler
                     </div>
                 </div>
-                <div className="footterHeader">
+                <div className="footerHeader">
                     <div className="headerButton">
                         <a href="#">
                         <img src="./images/iteration-2-images/icons/1.svg" alt="1.svg" />
