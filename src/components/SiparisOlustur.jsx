@@ -125,16 +125,14 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
       <header className="header">
         <section>
           <Link to="/">
-            <img src="Assets/Iteration-1-assets/logo.svg" alt="Logo" />
+            <img src="./images/Iteration-1-images/logo.svg" alt="logo" />
           </Link>
         </section>
       </header>
       <section className="header1">
         <div>
           <img
-            src="https://s3-alpha-sig.figma.com/img/3dc3/888e/fb1b2dee44748bbd31d4f786edc3a4d1?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LDdi33mFegnT3spOf4tpN6XQb5WpfxLBYC3Xzfusteb4oxscwTWHXVgzOFsF52BARpTjcjU7li0cggFKCyIS4WDtpUSwFy2RH3ybW~nwz2JDNBGmga03Mqk6BXqy6J-nfQaByzQ6xUmrf5um0kuyr1l5bqNOXYnwmGxo8QKPRNdlb7TZy2m9SX3hQDsq5xC~D0P-KP6ARYl2z8OuTCtP1jGKZjZdCpPMnC62OUwoVDLe5T5Pmu5qrrNRFJL2ypwTSLvyMXJgA5lLVuj7o4cTM0S4w1Ok6FN7RbX6s-t1ZewFroWh0RfFNog9f4eNPPjzMpk5LbP1v-S9AQRs0juQow__"
-            alt="item1.jpg"
-          />
+            src="./images/Iteration-2-images/pictures/form-banner.png" alt="form-banner"/>
         </div>
         <div className="yazi">
           <Link to="/">Anasayfa</Link> -{" "}
@@ -338,7 +336,7 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
                 color="warning"
                 className="arttirbtn"
                 onClick={() => {
-                  setForm({ ...form, adet: form.adet > 1 ? form.adet - 1 : 1 }); // 1'in altına düşmesini engelliyor
+                  setForm({ ...form, adet: form.adet > 1 ? form.adet - 1 : 1 }); // 1in altına düşmesini engelledim
                 }}
               >
                 -
@@ -348,7 +346,7 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
                 name="text"
                 type="text"
                 value={form.adet} // placeholder yerine value kullanılıyor
-                readOnly // Kullanıcı manuel olarak değiştiremesin diye readOnly ekledik
+                readOnly // Kullanıcı manuel olarak değiştiremesin diye readOnly ekledim
                 className="arttirtxt"
               />
               <Button
