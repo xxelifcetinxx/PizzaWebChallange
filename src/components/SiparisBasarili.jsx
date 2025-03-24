@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./SiparisBasarili.css";
 
 export default function SiparisBasarili({ verilenSiparis }) {
   const history = useHistory();

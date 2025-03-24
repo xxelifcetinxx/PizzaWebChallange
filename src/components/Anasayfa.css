@@ -14,12 +14,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: 4%;
   height: 75px;
   font-family: Barlow;
   font-weight: 500;
   font-size: 18px;
 }
+
 .gövdeNav a {
   display: flex;
   align-items: center;
@@ -126,7 +128,7 @@
   color: #292929;
 }
 
-.footterHeader {
+.footerHeader {
   background: #faf7f2;
   display: flex;
   justify-content: center;
@@ -135,6 +137,7 @@
   padding-top: 1%;
   padding-bottom: 1%;
 }
+
 .headerButton {
   background: white;
   padding: 20px 20px;
