@@ -162,226 +162,234 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
           </p>
         </div>
       </section>
-      <div className="form">
-        <Form onSubmit={handleSubmit}>
-          <FormGroup className="boyutHamur">
-            <FormGroup className="yeni" tag="fieldset">
-              <legend>
-                Boyut Seç <span style={{ color: "red" }}>*</span>
-              </legend>
-              <div className="yeniBoyut">
-                <div
-                  className={
-                    form.isim === "S" ? "boyutSecim secili" : "boyutSecim"
-                  }
-                  onClick={() => handleSize("S")}
-                >
-                  S
-                </div>
-                <div
-                  className={
-                    form.isim === "M" ? "boyutSecim secili" : "boyutSecim"
-                  }
-                  onClick={() => handleSize("M")}
-                >
-                  M
-                </div>
-                <div
-                  className={
-                    form.isim === "L" ? "boyutSecim secili" : "boyutSecim"
-                  }
-                  onClick={() => handleSize("L")}
-                >
-                  L
-                </div>
-              </div>
-              {errors.isim && (
-                <FormFeedback
-                  tooltip
-                  style={{ display: "flex", marginTop: "250px" }}
-                >
-                  {errorMessages.isim}
-                </FormFeedback>
-              )}
-            </FormGroup>
-            <FormGroup className="yeni">
-              <Label htmlFor="exampleSelect">
-                <legend>
-                  Hamur Seç
-                  <span style={{ color: "red" }}>*</span>
-                </legend>
-              </Label>
-              <Input
-                id="exampleSelect"
-                name="boyut"
-                type="select"
-                style={{ background: "#FAF7F2" }}
-                onChange={handleChange}
-                invalid={errors.boyut}
-              >
-                <option>--Hamur Kalınlığı--</option>
-                <option>İncecik Hamur</option>
-                <option>İnce Hamur</option>
-                <option>Klasik Hamur</option>
-              </Input>
-            </FormGroup>
-            {errors.boyut && (
-              <FormFeedback
-                tooltip
-                style={{
-                  display: "flex",
-                  marginLeft: "135px",
-                  marginTop: "250px",
-                }}
-              >
-                {errorMessages.boyut}
-              </FormFeedback>
-            )}
-          </FormGroup>
-          <legend>
-            Ek Malzemeler <span style={{ color: "red" }}>*</span>
-          </legend>
-          <legend className="malzemeSec">
-            En Fazla 10 Malzeme Seçebilirsiniz. (5₺)
-          </legend>
-          <FormGroup className="malzemeList">
-            <FormGroup className="ekMalzemeler">
-              {["Pepperoni", "Tavuk Izgara", "Mısır", "Sarımsak", "Ananas"].map(
-                (item) => (
-                  <FormGroup check inline className="malzemeBosluk" key={item}>
-                    <Input
-                      type="checkbox"
-                      name="malzemeler"
-                      id={item}
-                      value={item}
-                      onChange={handleChange}
-                      disabled={
-                        isMaxDisabled && !form.malzemeler.includes(item)
-                      }
-                      invalid={errors.malzemeler}
-                      className="checkStil"
-                    />
-                    <Label htmlFor={item} check>
-                      {item}
-                    </Label>
+      
+      <section className="form">
+            <div className="form">
+              <Form onSubmit={handleSubmit}>
+                <div className="boyutHamur"></div>  
+                <FormGroup className="boyutHamur" >
+                  <FormGroup className="yeni" tag="fieldset">
+                    <legend>
+                      Boyut Seç <span style={{ color: "red" }}>*</span>
+                    </legend>
+                    <div className="yeniBoyut">
+                      <div
+                        className={
+                          form.isim === "S" ? "boyutSecim secili" : "boyutSecim"
+                        }
+                        onClick={() => handleSize("S")}
+                      >
+                        S
+                      </div>
+                      <div
+                        className={
+                          form.isim === "M" ? "boyutSecim secili" : "boyutSecim"
+                        }
+                        onClick={() => handleSize("M")}
+                      >
+                        M
+                      </div>
+                      <div
+                        className={
+                          form.isim === "L" ? "boyutSecim secili" : "boyutSecim"
+                        }
+                        onClick={() => handleSize("L")}
+                      >
+                        L
+                      </div>
+                    </div>
+
+                    {errors.isim && (
+                      <FormFeedback
+                        tooltip
+                        style={{ display: "flex", marginTop: "250px" }}
+                      >
+                        {errorMessages.isim}
+                      </FormFeedback>
+                    )}
+
                   </FormGroup>
-                )
-              )}
-            </FormGroup>
-            <FormGroup className="ekMalzemeler">
-              {["Sosis", "Soğan", "Sucuk", "Biber", "Kabak"].map((item) => (
-                <FormGroup check inline className="malzemeBosluk" key={item}>
-                  <Input
-                    type="checkbox"
-                    name="malzemeler"
-                    id={item}
-                    value={item}
-                    onChange={handleChange}
-                    disabled={isMaxDisabled && !form.malzemeler.includes(item)}
-                    invalid={errors.malzemeler}
-                  />
-                  <Label htmlFor={item} check>
-                    {item}
-                  </Label>
+                  
+                  <FormGroup className="yeni">
+                  
+                    <Label htmlFor="exampleSelect">
+                      <legend>
+                        Hamur Seç
+                        <span style={{ color: "red" }}>*</span>
+                      </legend>
+                    </Label>
+                    <Input
+                      id="exampleSelect"
+                      name="boyut"
+                      type="select"
+                      style={{ background: "#FAF7F2" }}
+                      onChange={handleChange}
+                      invalid={errors.boyut}
+                    >
+                      <option>--Hamur Kalınlığı--</option>
+                      <option>İncecik Hamur</option>
+                      <option>İnce Hamur</option>
+                      <option>Klasik Hamur</option>
+                    </Input>
+                  </FormGroup>
+                  {errors.boyut && (
+                    <FormFeedback
+                      tooltip
+                      style={{
+                        display: "flex",
+                        marginLeft: "135px",
+                        marginTop: "250px",
+                      }}
+                    >
+                      {errorMessages.boyut}
+                    </FormFeedback>
+                  )} 
                 </FormGroup>
-              ))}
-            </FormGroup>
-            <FormGroup className="ekMalzemeler">
-              {["Kanada Jambonu", "Domates", "Jalepeno", "Kaşar Peyniri"].map(
-                (item) => (
-                  <FormGroup check inline className="malzemeBosluk" key={item}>
-                    <Input
-                      type="checkbox"
-                      name="malzemeler"
-                      id={item}
-                      value={item}
-                      onChange={handleChange}
-                      disabled={
-                        isMaxDisabled && !form.malzemeler.includes(item)
-                      }
-                      invalid={errors.malzemeler}
-                    />
-                    <Label htmlFor={item} check>
-                      {item}
-                    </Label>
+                <legend>
+                  Ek Malzemeler <span style={{ color: "red" }}>*</span>
+                </legend>
+                <legend className="malzemeSec">
+                  En Fazla 10 Malzeme Seçebilirsiniz. (5₺)
+                </legend>
+                <FormGroup className="malzemeList">
+                  <FormGroup className="ekMalzemeler">
+                    {["Pepperoni", "Tavuk Izgara", "Mısır", "Sarımsak", "Ananas"].map(
+                      (item) => (
+                        <FormGroup check inline className="malzemeBosluk" key={item}>
+                          <Input
+                            type="checkbox"
+                            name="malzemeler"
+                            id={item}
+                            value={item}
+                            onChange={handleChange}
+                            disabled={
+                              isMaxDisabled && !form.malzemeler.includes(item)
+                            }
+                            invalid={errors.malzemeler}
+                            className="checkStil"
+                          />
+                          <Label htmlFor={item} check>
+                            {item}
+                          </Label>
+                        </FormGroup>
+                      )
+                    )}
                   </FormGroup>
-                )
-              )}
-            </FormGroup>
-            {errors.malzemeler && (
-              <FormFeedback
-                tooltip
-                style={{ display: "flex", marginTop: "640px" }}
-              >
-                {errorMessages.malzemeler}
-              </FormFeedback>
-            )}
-          </FormGroup>
-          <FormGroup className="textAlani">
-            <Label htmlFor="özel" style={{ fontWeight: "bold" }}>
-              Sipariş Notu
-            </Label>
-            <Input
-              id="özel"
-              name="özel"
-              type="text"
-              placeholder="Siparişinize Eklemek İstediğiniz Not Var Mı?"
-              className="not"
-              onChange={handleChange}
-            />
-          </FormGroup>
-          <div className="siparisGör">
-            <FormGroup className="arttir">
-              <Button
-                color="warning"
-                className="arttirbtn"
-                onClick={() => {
-                  setForm({ ...form, adet: form.adet > 1 ? form.adet - 1 : 1 }); // 1in altına düşmesini engelledim
-                }}
-              >
-                -
-              </Button>
-              <Input
-                id="exampleText"
-                name="text"
-                type="text"
-                value={form.adet} // placeholder yerine value kullanılıyor
-                readOnly // Kullanıcı manuel olarak değiştiremesin diye readOnly ekledim
-                className="arttirtxt"
-              />
-              <Button
-                color="warning"
-                className="arttirbtn"
-                onClick={handleIncrement}
-              >
-                +
-              </Button>
-            </FormGroup>
-            <div className="siparisDetay">
-              <div className="siparis">Sipariş Toplamı</div>
-              <div className="secimler">
-                <div className="left">Seçimler</div>
-                <div className="right">
-                  {form.malzemeler.length * 5 * form.adet}₺
+                  <FormGroup className="ekMalzemeler">
+                    {["Sosis", "Soğan", "Sucuk", "Biber", "Kabak"].map((item) => (
+                      <FormGroup check inline className="malzemeBosluk" key={item}>
+                        <Input
+                          type="checkbox"
+                          name="malzemeler"
+                          id={item}
+                          value={item}
+                          onChange={handleChange}
+                          disabled={isMaxDisabled && !form.malzemeler.includes(item)}
+                          invalid={errors.malzemeler}
+                        />
+                        <Label htmlFor={item} check>
+                          {item}
+                        </Label>
+                      </FormGroup>
+                    ))}
+                  </FormGroup>
+                  <FormGroup className="ekMalzemeler">
+                    {["Kanada Jambonu", "Domates", "Jalepeno", "Kaşar Peyniri"].map(
+                      (item) => (
+                        <FormGroup check inline className="malzemeBosluk" key={item}>
+                          <Input
+                            type="checkbox"
+                            name="malzemeler"
+                            id={item}
+                            value={item}
+                            onChange={handleChange}
+                            disabled={
+                              isMaxDisabled && !form.malzemeler.includes(item)
+                            }
+                            invalid={errors.malzemeler}
+                          />
+                          <Label htmlFor={item} check>
+                            {item}
+                          </Label>
+                        </FormGroup>
+                      )
+                    )}
+                  </FormGroup>
+                  {errors.malzemeler && (
+                    <FormFeedback
+                      tooltip
+                      style={{ display: "flex", marginTop: "640px" }}
+                    >
+                      {errorMessages.malzemeler}
+                    </FormFeedback>
+                  )}
+                </FormGroup>
+                <FormGroup className="textAlani">
+                  <Label htmlFor="özel" style={{ fontWeight: "bold" }}>
+                    Sipariş Notu
+                  </Label>
+                  <Input
+                    id="özel"
+                    name="özel"
+                    type="text"
+                    placeholder="Siparişinize Eklemek İstediğiniz Not Var Mı?"
+                    className="not"
+                    onChange={handleChange}
+                  />
+                </FormGroup>
+                <div className="siparisGör">
+                  <FormGroup className="arttir">
+                    <Button
+                      color="warning"
+                      className="arttirbtn"
+                      onClick={() => {
+                        setForm({ ...form, adet: form.adet > 1 ? form.adet - 1 : 1 }); // 1in altına düşmesini engelledim
+                      }}
+                    >
+                      -
+                    </Button>
+                    <Input
+                      id="exampleText"
+                      name="text"
+                      type="text"
+                      value={form.adet} // placeholder yerine value kullanılıyor
+                      readOnly // Kullanıcı manuel olarak değiştiremesin diye readOnly ekledim
+                      className="arttirtxt"
+                    />
+                    <Button
+                      color="warning"
+                      className="arttirbtn"
+                      onClick={handleIncrement}
+                    >
+                      +
+                    </Button>
+                  </FormGroup>
+                  <div className="siparisDetay">
+                    <div className="siparis">Sipariş Toplamı</div>
+                    <div className="secimler">
+                      <div className="left">Seçimler</div>
+                      <div className="right">
+                        {form.malzemeler.length * 5 * form.adet}₺
+                      </div>
+                    </div>
+                    <div className="toplami">
+                      <div className="left">Toplam</div>
+                      <div className="right">
+                        {(form.malzemeler.length * 5 + form.fiyat).toFixed(2) *
+                          form.adet}
+                        ₺
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="toplami">
-                <div className="left">Toplam</div>
-                <div className="right">
-                  {(form.malzemeler.length * 5 + form.fiyat).toFixed(2) *
-                    form.adet}
-                  ₺
-                </div>
-              </div>
+                <FormGroup className="btnSiparis">
+                  <Button color="warning" className="siparisVer" disabled={!isValid}>
+                    Sipariş Ver
+                  </Button>
+                </FormGroup>
+              </Form>
             </div>
-          </div>
-          <FormGroup className="btnSiparis">
-            <Button color="warning" className="siparisVer" disabled={!isValid}>
-              Sipariş Ver
-            </Button>
-          </FormGroup>
-        </Form>
-      </div>
+      </section>    
     </>
   );
 }

@@ -64,6 +64,9 @@
   font-family: Barlow;
   font-size: 19px;
   font-weight: 600;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .boxBody a:hover {
@@ -211,3 +214,52 @@
   color: #292929;
 }
 
+@media (max-width: 768px) {
+  
+  .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .icerik {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .gövdeNav  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .paketHeader {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .footerHeader  {
+    display: flex;
+    
+    flex-wrap: wrap;
+  }
+  
+  
+  .pizzas {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+
+}
+ 

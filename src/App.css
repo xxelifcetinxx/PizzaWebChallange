@@ -3,3 +3,7 @@
   margin: 0 auto;
   padding: 0px;
 }
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }

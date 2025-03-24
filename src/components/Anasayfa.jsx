@@ -9,7 +9,7 @@ export default function Anasayfa() {
     return (
         <>
             <div className="hero-image">
-            <img src="images/iteration-1-images/Home-banner.png" alt="banner" />
+            <img src="images/iteration-1-images/Home-banner.png" alt="home-banner" />
                 <div className="hero-text">
                     <section>
                         <Link to="/">
