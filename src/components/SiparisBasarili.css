@@ -12,6 +12,24 @@
     margin-top: 50px;
 }
 
+.siparisBasarili {
+    background-color: #CE2829;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.SiparisBasariliTxt {
+    display: flex;
+    justify-content: center;
+    font-family: Barlow;
+    font-size: 56px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 75px;
+  }
+
 .siparisBasariliBaslik {
     font-family: Barlow;
     font-size: 30px;
@@ -28,6 +46,14 @@
     align-content: center;
     flex-wrap: wrap;
     font-family: Barlow;
+}
+
+
+
+.siparisBasariliHeader {
+  display: flex;
+  justify-content: center;
+  padding: 50px 50px;
 }
 
 
@@ -51,3 +77,9 @@
 .siparisRenk {
     color: white;
 }
+
+@media (max-width: 768px) {
+.form {
+    display: flex;
+    flex-direction: column;
+    }}

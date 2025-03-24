@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-.header1 {
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #CE2829;
+}
+
+.banner  {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,14 +16,21 @@
   background: #faf7f2;
 }
 
-.header1 img {
-  width: 100%;
-  object-fit: cover;
-  object-position: bottom;
-  aspect-ratio: 2 / 1;
-}
+.card body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+} 
+
 
 .yazi {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+ 
   color: black;
   max-width: 715px;
   text-align: left;
@@ -25,11 +40,25 @@
   font-weight: 500;
   line-height: 28.8px;
 }
+.yazi a{
+  flex-direction: row;
+}
+
+.yazi .girisYazi{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 25px 0%;
+}
 
 .yeniBoyut {
   display: flex;
   flex-direction: row;
   gap: 5%;
+}
+
+.yeni {
+  flex: 1;
 }
 
 .boyutSecim {
@@ -60,110 +89,261 @@
 
 
 
+.form {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  text-align: left;
+}
+
+
+.giris {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 690px;
+  word-wrap: break-word;
+  color: #5F5F5F;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  padding: 25px 0%;
+}
+
+.giris p{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.baslik {
+  font-family: Barlow;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 29.44px;
+  text-align: left;
+  padding: 25px 0%;
+}
+
+.fiyat {
+  font-family: Barlow;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37.47px;
+  text-align: right;
+}
+
+.yorumdegerlendirme {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #5F5F5F;
+}
+
+
+.fy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 690px;
+  padding: 25px 0%;
+}
+
+.boyutHamur {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.malzemeSec {
+  font-size: calc(0.7rem + .3vw);
+  padding: 20px 0px 50px 0px;
+}
+
+
+.malzemeler {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 50px 0px;
+  width: 524px;
+  gap: 13px;
+  color: #5F5F5F;
+}
+
+.not {
+  height: 75px;
+  background: #FAF7F2;
+}
+
+.textAlani {
+  padding: 10px 0px 55px 0px;
+  border-bottom: 1px solid black;
+}
+
+.siparisGör {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0px;
+}
+
+
+.arttir {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  width: 350px;
+}
+
+.arttirbtn {
+  width: 70px;
+  height: 70px;
+  font-weight: bold;
+}
+
+.arttirtxt {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.siparisDetay {
+  margin: 55px 0px 0px 0px;
+  padding: 45px 0px 0px 0px;
+  border: 1px solid #D9D9D9;
+  width: 350px;
+  height: 197px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 10px;
+  background: #FAF7F2;
+}
+
+.siparis {
+  display: flex;
+  justify-content: center;
+  font-family: Barlow;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.76px;
+  text-align: left;
+  padding: 0px 0px 30px 0px;
+}
+
+.secimler {
+  display: flex;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.76px;
+  color: #5F5F5F;
+  padding: 0px 0px 15px 0px;
+  font-weight: bold;
+}
+
+.toplami {
+  display: flex;
+  font-family: Barlow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.76px;
+  color: #CE2829;
+  font-weight: bold;
+}
+
+.btnSiparis {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 0px 360px;
+  padding: 0px 0px 150px 0px;
+}
+
+.siparisVer {
+  width: 355px;
+  font-weight: bold;
+}
+
+.left {
+  text-align: right;
+  flex: 1;
+}
+
+.right {
+  text-align: center;
+  flex: 1;
+}
+
+
+
+.ekMalzemeler {
+  display: flex;
+  flex-direction: column;
+}
+
+.malzemeList {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
+  color: #5F5F5F;
+}
+
+.malzemeBosluk {
+  margin: 0px 0px 20px 0px;
+}
+
+.boyutYazi {
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+
+
 
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .header img {
+  .banner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    
   }
 
   .form {
-    
-    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center
+    flex-direction: column;
   }
 
   .boyutHamur {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 
-  .yeniBoyut {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+.siparisVer {
+  display: flex;
+  flex-direction: column;
 
-  .boyutSecim {
-    width: 50px;
-    height: 50px;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-  }
+}
 
-  .malzemeList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-  }
+.siparisGör {
+  display: flex;
+  flex-direction: column;
+}
 
-  .ekMalzemeler {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .arttir {
-    
-    justify-content: center;
-    display: flex;
-    align-items: center;
-   
-  }
-  
-  .arttirbtn {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-  }
+.btnSiparis {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 200px 0px;
 
-  .siparisGör {
-    display: flex;
-    flex-direction: column;
-    
-  
-  }
 
-  .siparisDetay {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-  }
+}
 
-  .btnSiparis {
-    display: flex;
-    justify-content: center;
-
-    flex-direction: column;
-    align-items: center;
-  
-  }
-
-  .siparisVer {
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }

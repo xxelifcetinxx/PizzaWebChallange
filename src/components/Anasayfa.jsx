@@ -11,7 +11,7 @@ export default function Anasayfa() {
             <div className="hero-image">
             <img src="images/iteration-1-images/Home-banner.png" alt="home-banner" />
                 <div className="hero-text">
-                    <section>
+                    <section class= "logo">
                         <Link to="/">
                             <img src="images/iteration-1-images/logo.svg" alt="Logo" />
                         </Link>
