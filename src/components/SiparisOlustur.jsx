@@ -134,10 +134,10 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
         </div>
 
         <div className="yazi">
+          <div>
           <Link to="/">Anasayfa</Link> -{" "}
-          <Link to="/siparis-olustur" style={{ color: "#CE2829" }}>
-            Sipariş Oluştur
-          </Link>
+          <Link to="/siparis-olustur" style={{ color: "#CE2829" }}>Sipariş Oluştur</Link>
+          </div>
           <CardBody>
             <CardTitle tag="h2">
               <section className="baslik">Position Absolute Acı Pizza</section>
@@ -210,6 +210,7 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
 
               {errors.boyut && (<FormFeedback style={{ display: 'block',color: 'red', }}>{errorMessages.boyut}</FormFeedback>)}
 
+
             </FormGroup>
           </FormGroup>
 
@@ -255,6 +256,10 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
             ))}
           </FormGroup>
           {errors.malzemeler && (<FormFeedback style={{ display: 'block',color: 'red', }}>{errorMessages.malzemeler}</FormFeedback>)}
+
+
+
+          <div className="bosluk-container" style={{ height: '50px' }}></div>
 
 
 
