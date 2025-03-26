@@ -248,8 +248,7 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
                       invalid={errors.malzemeler}
                     />
                     <Label htmlFor={item} check>
-                      {item}
-                    </Label>
+                      {item} </Label>
                   </FormGroup>
                 ))}
               </FormGroup>
@@ -303,7 +302,6 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
                 +
               </Button>
             </FormGroup>
-  
 
 
             <div className="siparisDetay">
