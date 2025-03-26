@@ -37,20 +37,15 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
 
   const isMaxDisabled = form.malzemeler.length >= 10;
 
+
   useEffect(() => {
     setIsValid(!errors.isim && !errors.boyut && !errors.malzemeler);
   }, [errors]);
 
 
 
-
   const handleChange = (event) => {
   let { name, value, type, checked } = event.target;
-
-
-
-
-
 
   if (type === "checkbox" && name === "malzemeler") {
     setForm((prevForm) => {
@@ -65,7 +60,6 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
       } else {
         updatedMalzemeler = prevForm.malzemeler.filter((item) => item !== value);
       }
-
       return { ...prevForm, malzemeler: updatedMalzemeler };
     });
 
@@ -77,10 +71,6 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
   } else {
     setForm((prevForm) => ({ ...prevForm, [name]: value }));
 
-
-
-
-    
     if (name === "boyut") {
       setErrors((prevErrors) => ({
         ...prevErrors,
@@ -95,10 +85,11 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
     setForm((prevForm) => ({ ...prevForm, adet: prevForm.adet + 1 }));
   };
 
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (!isValid) return;
-
     axios
       .get("https://reqres.in/api/pizza")
       .then(() => {
@@ -110,6 +101,9 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
         history.push("/error");
       });
   };
+
+
+
 
   const handleSize = (size) => {
     setForm((prevForm) => ({ ...prevForm, isim: size }));
