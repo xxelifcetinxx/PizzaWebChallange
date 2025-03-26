@@ -24,9 +24,9 @@ const initialForm = {
 };
 
 const errorMessages = {
-  isim: "Boyut seçmelisiniz.",
-  boyut: "Hamur seçmelisiniz.",
-  malzemeler: "En az 4 malzeme seçmelisiniz.",
+  isim: "Boyut seçmelisiniz!",
+  boyut: "Hamur seçmelisiniz!",
+  malzemeler: "En az 4 malzeme seçmelisiniz!",
 };
 
 export default function SiparisOlustur({ setVerilenSiparis }) {
@@ -46,6 +46,11 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
 
   const handleChange = (event) => {
   let { name, value, type, checked } = event.target;
+
+
+
+
+
 
   if (type === "checkbox" && name === "malzemeler") {
     setForm((prevForm) => {
@@ -72,6 +77,10 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
   } else {
     setForm((prevForm) => ({ ...prevForm, [name]: value }));
 
+
+
+
+    
     if (name === "boyut") {
       setErrors((prevErrors) => ({
         ...prevErrors,
@@ -182,11 +191,9 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
                   </div>
                 ))}
               </div>
-              {errors.isim && (
-                <FormFeedback tooltip>{errorMessages.isim}</FormFeedback>
-              )}
             </FormGroup>
-  
+          
+            
             <FormGroup className="yeni">
               <Label htmlFor="exampleSelect">
                 <legend>
@@ -206,17 +213,28 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
                 <option>İnce Hamur</option>
                 <option>Klasik Hamur</option>
               </Input>
-              {errors.boyut && <FormFeedback tooltip>{errorMessages.boyut}</FormFeedback>}
+
+              {errors.boyut && (<FormFeedback style={{ display: 'block',color: 'red', }}>{errorMessages.boyut}</FormFeedback>)}
+
             </FormGroup>
           </FormGroup>
+
+
+
+          <div className="bosluk1">{errors.isim && (<FormFeedback style={{ display: 'block',color: 'red', }}>{errorMessages.isim}</FormFeedback>)}</div>
+          <div className="errorisim-container" style={{ height: '20px' }}></div>
+          
+        
   
+
+
+
+
           {/* EK MALZEMELER */}
           <legend>Ek Malzemeler <span style={{ color: "red" }}>*</span></legend>
           <legend className="malzemeSec">
             En Fazla 10 Malzeme Seçebilirsiniz. (5₺)
           </legend>
-
-      
           <FormGroup className="malzemeList">
             {[
               ["Pepperoni", "Tavuk Izgara", "Mısır", "Sarımsak", "Ananas"],
@@ -243,10 +261,8 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
               </FormGroup>
             ))}
           </FormGroup>
-          {errors.malzemeler && (
-            <FormFeedback tooltip>{errorMessages.malzemeler}</FormFeedback>
-          )}
-  
+          {errors.malzemeler && (<FormFeedback style={{ display: 'block',color: 'red', }}>{errorMessages.malzemeler}</FormFeedback>)}
+
 
 
 
@@ -265,6 +281,10 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
             />
           </FormGroup>
   
+
+
+
+
           {/* SİPARİŞ DETAYLARI */}
           <div className="siparisGör">
             <FormGroup className="arttir">
@@ -290,6 +310,8 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
               </Button>
             </FormGroup>
   
+
+
             <div className="siparisDetay">
               <div className="siparis">Sipariş Toplamı</div>
               <div className="secimler">
@@ -305,6 +327,9 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
             </div>
           </div>
   
+
+
+
           {/* SİPARİŞ VER BUTONU */}
           <FormGroup className="btnSiparis">
             <Button color="warning" className="siparisVer" disabled={!isValid}>
