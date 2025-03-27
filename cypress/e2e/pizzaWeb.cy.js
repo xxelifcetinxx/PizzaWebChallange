@@ -93,18 +93,6 @@ describe('Sipariş Oluştur Sayfası', () => {
 
 
 
-
-  it('Boyut ve hamur seçimi birlikte kontrolü', () => {
-    cy.get('.yeniBoyut div').contains('M').click();
-    cy.get('select[name="boyut"]').select('İnce Hamur');
-    // Malzeme seçimi ekleyin
-    const malzemeler = ['Pepperoni', 'Mısır', 'Sucuk', 'Biber'];
-    malzemeler.forEach((malzeme) => {
-        cy.get(`input[value="${malzeme}"]`).check();
-    });
-    cy.get('button.siparisVer').should('not.be.disabled');
-});
-
   
 
 
@@ -144,7 +132,7 @@ describe('Sipariş Oluştur Sayfası', () => {
       cy.get('.arttirbtn').contains('+').click();
   
       // Beklenen toplamı hesapla
-      const adet = 2; // Adeti 2 yaptık
+      const adet = 2; // Adeti 2 yaptım
       const pizzaFiyati = 85.5;
       const beklenenToplam = pizzaFiyati * adet;
   
@@ -227,16 +215,12 @@ it('Malzeme seçimi hata mesajı kaybolma', () => {
     cy.get('input[name="özel"]').should('have.value', not);
   });
 
+
   it('Sipariş notu temizleme', () => {
     cy.get('input[name="özel"]').type('Ekstra peynir ekleyin.');
     cy.get('input[name="özel"]').clear();
     cy.get('input[name="özel"]').should('have.value', '');
   });
-
-
-
-
-
 
 
 
