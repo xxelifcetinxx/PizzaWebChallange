@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
+
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./SiparisBasarili.css";
@@ -10,38 +11,44 @@ export default function SiparisBasarili({ verilenSiparis }) {
   useEffect(() => {
     if (!verilenSiparis) {
       // Eğer verilenSiparis boşsa hata toast mesajı göster ve hemen yönlendir
-      toast.error("Hata!! Sipariş bulunamadı, anasayfaya yönlendiriliyorsunuz", {
-        position: "top-right",
-        autoClose: 15000, // 5 saniye sonra otomatik kapanır
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: true,
-        progress: undefined,
-        style: { backgroundColor: "white", color: "red" }, // Kırmızı arka plan ve beyaz yazı
-      });
+      toast.error(
+        "Hata!! Sipariş bulunamadı, anasayfaya yönlendiriliyorsunuz",
+        {
+          position: "top-right",
+          autoClose: 5000, // 5 saniye sonra otomatik kapanır
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          style: { backgroundColor: "white", color: "red" }, // Kırmızı arka plan ve beyaz yazı
+        }
+      );
 
       const myTimeout = setTimeout(() => {
         history.push("/"); // Hedef sayfa: Anasayfa
-      }, 15000); // 5 saniye sonra yönlendirme
+      }, 5000); // 5 saniye sonra yönlendirme
 
       return () => clearTimeout(myTimeout); // Cleanup function
     } else {
       // Eğer sipariş varsa, başarı mesajı göster ve 5 saniye sonra yönlendir
-      toast.success("Siparişiniz başarıyla alınmıştır!! Anasayfaya yönlendiriliyorsunuz. Teşekkür ederiz. ", {
-        position: "top-right",
-        autoClose: 15000, // 5 saniye sonra otomatik kapanır
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: true,
-        progress: undefined,
-        style: { backgroundColor: "green", color: "white" }, // Yeşil arka plan ve beyaz yazı
-      });
+      toast.success(
+        "Siparişiniz başarıyla alınmıştır!! Anasayfaya yönlendiriliyorsunuz. Teşekkür ederiz. ",
+        {
+          position: "top-right",
+          autoClose: 5000, // 5 saniye sonra otomatik kapanır
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          style: { backgroundColor: "green", color: "white" }, // Yeşil arka plan ve beyaz yazı
+        }
+      );
 
       const myTimeout = setTimeout(() => {
         history.push("/"); // Hedef sayfa: Anasayfa
-      }, 15000); // 5 saniye sonra yönlendirme
+      }, 5000); // 5 saniye sonra yönlendirme
 
       return () => clearTimeout(myTimeout); // Cleanup function
     }
@@ -50,7 +57,7 @@ export default function SiparisBasarili({ verilenSiparis }) {
   return verilenSiparis ? (
     <div className="siparisBasarili">
       <section className="siparisBasariliHeader">
-      <img src="images/iteration-1-images/logo.svg" alt="Logo" />
+        <img src="./images/iteration-1-images/logo.svg" alt="Logo" />
       </section>
       <section className="SiparisBasariliTxt">
         <p>
@@ -98,18 +105,29 @@ export default function SiparisBasarili({ verilenSiparis }) {
   ) : (
     <div className="siparisBasarili">
       <section className="siparisBasariliHeader">
-        <img src="images/Iteration-1-images/logo.svg" alt="Logo" />{" "}
+        <img src="./images/Iteration-1-images/logo.svg" alt="Logo" />{" "}
       </section>
       <section className="SiparisBasariliTxt">
-      <div><img src="images/iteration-2-images/pictures/food-1.png" alt="food-1" style={{ width: "100%", marginBottom: '50px' }}/></div>
-   
         <div>
-        <p>Sipariş Alınamadı.</p>
-        <p>Tekrar Deneyiniz! </p>
+          <img
+            src="./images/iteration-2-images/pictures/food-1.png"
+            alt="food-1"
+            style={{ width: "100%", marginBottom: "50px" }}
+          />
         </div>
-        
-        
-        <div><img src="images/iteration-2-images/pictures/food-2.png" alt="food-2" style={{ width: "100%",marginBottom: '80px' }}/></div>
+
+        <div>
+          <p>Sipariş Alınamadı.</p>
+          <p>Tekrar Deneyiniz! </p>
+        </div>
+
+        <div>
+          <img
+            src="./images/iteration-2-images/pictures/food-2.png"
+            alt="food-2"
+            style={{ width: "100%", marginBottom: "80px" }}
+          />
+        </div>
       </section>
       <ToastContainer />
     </div>
