@@ -57,7 +57,7 @@ export default function SiparisBasarili({ verilenSiparis }) {
   return verilenSiparis ? (
     <div className="siparisBasarili">
       <section className="siparisBasariliHeader">
-        <img src="./images/iteration-1-images/logo.svg" alt="Logo" />
+        <img src="/images/iteration-1-images/logo.svg" alt="Logo" />
       </section>
       <section className="SiparisBasariliTxt">
         <p>
@@ -105,12 +105,12 @@ export default function SiparisBasarili({ verilenSiparis }) {
   ) : (
     <div className="siparisBasarili">
       <section className="siparisBasariliHeader">
-        <img src="./images/Iteration-1-images/logo.svg" alt="Logo" />{" "}
+        <img src="/images/Iteration-1-images/logo.svg" alt="Logo" />{" "}
       </section>
       <section className="SiparisBasariliTxt">
         <div>
           <img
-            src="./images/iteration-2-images/pictures/food-1.png"
+            src="/images/iteration-2-images/pictures/food-1.png"
             alt="food-1"
             style={{ width: "100%", marginBottom: "50px" }}
           />
@@ -123,7 +123,7 @@ export default function SiparisBasarili({ verilenSiparis }) {
 
         <div>
           <img
-            src="./images/iteration-2-images/pictures/food-2.png"
+            src="/images/iteration-2-images/pictures/food-2.png"
             alt="food-2"
             style={{ width: "100%", marginBottom: "80px" }}
           />
