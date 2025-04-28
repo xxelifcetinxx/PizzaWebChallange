@@ -119,7 +119,7 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
       <header className="header">
         <section>
           <Link to="/">
-            <img src="./images/Iteration-1-images/logo.svg" alt="logo" />
+            <img src="/public/images/Iteration-1-images/logo.svg" alt="logo" />
           </Link>
         </section>
       </header>
@@ -128,7 +128,7 @@ export default function SiparisOlustur({ setVerilenSiparis }) {
       <section className="banner">
         <div>
           <img
-            src="./images/Iteration-2-images/pictures/form-banner.png"
+            src="/public/images/Iteration-2-images/pictures/form-banner.png"
             alt="form-banner"
           />
         </div>
