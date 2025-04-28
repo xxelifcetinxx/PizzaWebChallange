@@ -15,13 +15,13 @@ export default function Anasayfa() {
     <>
       <div className="hero-image">
         <img
-          src="./images/iteration-1-images/Home-banner.png"
+          src="/images/iteration-1-images/Home-banner.png"
           alt="home-banner"
         />
         <div className="hero-text">
           <section class="logo">
             <Link to="/">
-              <img src="./images/iteration-1-images/logo.svg" alt="Logo" />
+              <img src="/images/iteration-1-images/logo.svg" alt="Logo" />
             </Link>
           </section>
           <p className="firsat">fırsatı kaçırma</p>
@@ -41,27 +41,27 @@ export default function Anasayfa() {
       <div>
         <div className="gövdeNav">
           <a href="#">
-            <img src="./images/iteration-2-images/icons/1.svg" alt="1.svg" />
+            <img src="/images/iteration-2-images/icons/1.svg" alt="1.svg" />
             YENİ! Kore
           </a>
           <a href="#">
-            <img src="./images/iteration-2-images/icons/2.svg" alt="2.svg" />
+            <img src="/images/iteration-2-images/icons/2.svg" alt="2.svg" />
             Pizza
           </a>
           <a href="#">
-            <img src="./images/iteration-2-images/icons/3.svg" alt="3.svg" />
+            <img src="/images/iteration-2-images/icons/3.svg" alt="3.svg" />
             Burger
           </a>
           <a href="#">
-            <img src="./images/iteration-2-images/icons/4.svg" alt="4.svg" />
+            <img src="/images/iteration-2-images/icons/4.svg" alt="4.svg" />
             Kızartmalar
           </a>
           <a href="#">
-            <img src="./images/iteration-2-images/icons/5.svg" alt="5.svg" />
+            <img src="/images/iteration-2-images/icons/5.svg" alt="5.svg" />
             Fast food
           </a>
           <a href="#">
-            <img src="./images/iteration-2-images/icons/6.svg" alt="6.svg" />
+            <img src="/images/iteration-2-images/icons/6.svg" alt="6.svg" />
             Gazlı İçecek
           </a>
         </div>
@@ -70,7 +70,7 @@ export default function Anasayfa() {
           <Card inverse className="box" style={{ background: "#CE2829" }}>
             <CardImg
               alt="kart-1.png"
-              src="./images/iteration-2-images/cta/kart-1.png"
+              src="/images/iteration-2-images/cta/kart-1.png"
               style={{
                 height: 465,
               }}
@@ -97,7 +97,7 @@ export default function Anasayfa() {
             >
               <CardImg
                 alt="kart-2.png"
-                src="./images/iteration-2-images/cta/kart-2.png"
+                src="/images/iteration-2-images/cta/kart-2.png"
                 style={{ height: 225 }}
                 width="100%"
               />
@@ -120,7 +120,7 @@ export default function Anasayfa() {
             >
               <CardImg
                 alt="kart-3.png"
-                src="./images/iteration-2-images/cta/kart-3.png"
+                src="/images/iteration-2-images/cta/kart-3.png"
                 style={{ height: 225 }}
                 width="100%"
               />
@@ -150,37 +150,37 @@ export default function Anasayfa() {
         <div className="footerHeader">
           <div className="headerButton">
             <a href="#">
-              <img src="./images/iteration-2-images/icons/1.svg" alt="1.svg" />
+              <img src="/images/iteration-2-images/icons/1.svg" alt="1.svg" />
               Ramen
             </a>
           </div>
           <div className="headerButton">
             <a href="#">
-              <img src="./images/iteration-2-images/icons/2.svg" alt="2.svg" />
+              <img src="/images/iteration-2-images/icons/2.svg" alt="2.svg" />
               Pizza
             </a>
           </div>
           <div className="headerButton">
             <a href="#">
-              <img src="./images/iteration-2-images/icons/3.svg" alt="3.svg" />
+              <img src="/images/iteration-2-images/icons/3.svg" alt="3.svg" />
               Burger
             </a>
           </div>
           <div className="headerButton">
             <a href="#">
-              <img src="./images/iteration-2-images/icons/4.svg" alt="4.svg" />
+              <img src="/images/iteration-2-images/icons/4.svg" alt="4.svg" />
               French Fries
             </a>
           </div>
           <div className="headerButton">
             <a href="#">
-              <img src="./images/iteration-2-images/icons/5.svg" alt="5.svg" />
+              <img src="/images/iteration-2-images/icons/5.svg" alt="5.svg" />
               Fast food
             </a>
           </div>
           <div className="headerButton">
             <a href="#">
-              <img src="./images/iteration-2-images/icons/6.svg" alt="6.svg" />
+              <img src="/images/iteration-2-images/icons/6.svg" alt="6.svg" />
               Soft drinks
             </a>
           </div>
@@ -197,7 +197,7 @@ export default function Anasayfa() {
             >
               <img
                 alt="food-1"
-                src="./images/iteration-2-images/pictures/food-1.png"
+                src="/images/iteration-2-images/pictures/food-1.png"
               />
               <CardBody>
                 <CardTitle className="pizzaHeader">Terminal Pizza</CardTitle>
@@ -219,7 +219,7 @@ export default function Anasayfa() {
             >
               <img
                 alt="food-2"
-                src="./images/iteration-2-images/pictures/food-2.png"
+                src="/images/iteration-2-images/pictures/food-2.png"
               />
               <CardBody>
                 <CardTitle className="pizzaHeader">
@@ -243,7 +243,7 @@ export default function Anasayfa() {
             >
               <img
                 alt="food-3"
-                src="./images/iteration-2-images/pictures/food-3.png"
+                src="/images/iteration-2-images/pictures/food-3.png"
               />
               <CardBody>
                 <CardTitle className="pizzaHeader">
