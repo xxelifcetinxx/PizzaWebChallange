@@ -5,11 +5,9 @@ import SiparisBasarili from "./components/SiparisBasarili.jsx";
 
 import "./App.css";
 
-
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 
 function App() {
   const [verilenSiparis, setVerilenSiparis] = useState();
